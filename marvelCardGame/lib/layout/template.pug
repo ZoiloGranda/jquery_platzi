@@ -1,0 +1,19 @@
+section.Layout
+  section.Layout-antagonist
+    each card in [1,2,3,4,5]
+      include ../card/template.pug
+  section.Layout-main
+    div.Layout-status
+      form.CharacterForm(action="#")
+        input.CharacterForm-name(type="text" placeholder="Agrega un Personaje") 
+        button Agregar
+        span.CharacterForm-message
+    div.Layout-battle
+      include ../battle/template.pug
+    div.Layout-phases
+      - text = "Ese ataque fue muy fuerte"
+      include ../phases/template.pug
+  section.Layout-player player
+    each card in [1,2,3,4,5]
+      include ../card/template.pug
+

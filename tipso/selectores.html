@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+      div, p{
+        padding-left: 30px;
+      }
+      p.favorito{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="abuelo">
+      El abuelo
+      <div class="padre">
+        El padre
+        <p class="hijo">Hijo 1</p>
+        <p class="hijo">Hijo 2</p>
+        <p class="hijo">Hijo 3</p>
+        <p class="hijo">Hijo 4</p>
+        <p class="hijo"><a href="https://www.google.co.ve" target="_blank">Google</a></p>
+        
+        
+      </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  var abuelo=$('#abuelo');
+  var padre= abuelo.find('.padre')
+  var hijos= padre.find('p.hijo')
+  hijos.eq(2).addClass('favorito')
+  hijos.eq(4)
+  .find('a')
+  .attr('href', "https://www.platzi.com")
+  .html('Ir a Platzi')
+  </script>
+  </body>
+</html>

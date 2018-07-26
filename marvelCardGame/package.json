@@ -1,0 +1,39 @@
+{
+  "name": "marvelcardgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-stylus": "^2.7.0",
+    "gulp-uglify": "^3.0.0",
+    "http-server": "^0.11.1",
+    "jquery": "^3.3.1",
+    "lodash.assign": "^4.2.0",
+    "nib": "^1.1.2",
+    "page": "^1.8.6",
+    "pug-cli": "^1.0.0-alpha6",
+    "pugify": "^2.2.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "stylus": "^0.54.5",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "pug-help": "pug --help",
+    "stylus-help": "stylus --help"
+  },
+  "author": "",
+  "license": "ISC"
+}
